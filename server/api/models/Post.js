@@ -7,6 +7,7 @@
 
 module.exports = {
   tableName: "posts",
+  publishCreate: true,
   attributes: {
     title: {
       type: "string",
