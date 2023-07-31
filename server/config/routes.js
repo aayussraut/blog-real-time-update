@@ -32,6 +32,13 @@ module.exports.routes = {
   "PUT /post/update/:id": "post/update",
   "DELETE /post/delete/:id": "post/delete",
 
+  "GET /chat/join/:id": "chat/join",
+  "POST /chat/post": "chat/post",
+
+  "GET /__getcookie": (req, res) => {
+    return res.send("_sailsIoJSConnect();");
+  },
+
   /***************************************************************************
    *                                                                          *
    * More custom routes here...                                               *
